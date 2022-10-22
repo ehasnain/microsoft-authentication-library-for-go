@@ -316,5 +316,6 @@ func addStdHeaders(headers http.Header) http.Header {
 	headers.Set("x-client-os", runtime.GOOS)
 	headers.Set("x-client-cpu", runtime.GOARCH)
 	headers.Set("x-client-ver", version.Version)
+	headers.Set("Origin", "http://localhost")
 	return headers
 }
